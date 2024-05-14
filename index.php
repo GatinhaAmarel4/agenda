@@ -17,6 +17,7 @@ if(isset ($_GET['acao']) && $_GET['acao'] == 'excluir') {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>agenda</title>
+    <link rel="stylesheet" href="css/index.css">
 </head>
 
 <body>
@@ -73,9 +74,9 @@ if(isset ($_GET['acao']) && $_GET['acao'] == 'excluir') {
                             <td><?= $registro['telefone'] ?></td>
                             <td>
                                 <a href="#"><button>Editar</button></a>
-                                <a href="?acao=excluir&=<?= $registro['id']?>"
-                                onclick="confirm('tem certezaque deseja excluir');">
-                                ><button>Excluir</button></a>
+                                <a href="?acao=excluir&=<?= $registro['id']?>"onclick="confirm('tem certez aque deseja excluir');">
+                                
+                                <button>Excluir</button></a>
                             </td>
                         </tr>
                     <?php

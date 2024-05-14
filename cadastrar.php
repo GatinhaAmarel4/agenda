@@ -27,7 +27,7 @@ if($_SERVER['REQUEST_METHOD'] == "POST"){
    ('$nome', '$sobrenome', '$nascimento', '$endereco', '$telefone')"; 
 
    IF ($conexaoComBanco->query($sql) === TRUE ) {
-    echo ":) sucesso ao cadastrar o contato :)";
+    echo ":) <script>alert('sucesso ao cadastrar o contato:)')</script>";
     } else {
         echo ":( Erro ao cadastrar o contato :(";
     }
@@ -55,6 +55,7 @@ if($_SERVER['REQUEST_METHOD'] == "POST"){
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>agenda</title>
+    <link rel="stylesheet" href="css/cadastrar.css">
 </head>
 
 <body>
